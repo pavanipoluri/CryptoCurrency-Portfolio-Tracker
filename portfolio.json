@@ -1,0 +1,17 @@
+[
+    {
+        "coin": "dogecoin",
+        "quantity": 1000.0,
+        "buy_price": 0.08
+    },
+    {
+        "coin": "bitcoin",
+        "quantity": 10.0,
+        "buy_price": 10.0
+    },
+    {
+        "coin": "litecoin",
+        "quantity": 400.0,
+        "buy_price": 600.0
+    }
+]

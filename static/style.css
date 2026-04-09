@@ -1,0 +1,162 @@
+:root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+    --border: #334155;
+    --accent: #3b82f6;
+    --green: #22c55e;
+    --red: #ef4444;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 20px;
+}
+
+
+/* Title */
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* Form */
+
+form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: #020617;
+    color: var(--text);
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+
+/* Buttons */
+
+button {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: none;
+    background: var(--accent);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+button.danger {
+    background: var(--red);
+}
+
+
+/* Dashboard */
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.kpi-card {
+    background: var(--card);
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    text-align: center;
+}
+
+.kpi-card h3 {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.kpi-card p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* Profit colors */
+
+.positive {
+    color: var(--green);
+}
+
+.negative {
+    color: var(--red);
+}
+
+
+/* Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--card);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th {
+    background: #020617;
+    color: var(--muted);
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    border-top: 1px solid var(--border);
+}
+
+
+/* Highlight profit/loss */
+
+td.positive {
+    color: var(--green);
+    font-weight: bold;
+}
+
+td.negative {
+    color: var(--red);
+    font-weight: bold;
+}
+
+
+/* Inline forms */
+
+.inline {
+    display: inline;
+}
+
+
+/* Empty text */
+
+.empty {
+    text-align: center;
+    color: var(--muted);
+}
